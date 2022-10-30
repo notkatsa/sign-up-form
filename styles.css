@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    font-family: 'Roboto';
+    margin:0;
+    color: white;
+}
+
+.content {
+    display: flex;
+}
+.picture {
+    background: no-repeat url(./bread-Louise-Lyshoj-unsplash.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+    width: 40%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    gap: 1rem;
+    top:20vh;
+    padding: 15px 0;
+    font-size: 33px;
+    font-weight: 900;
+}
+
+.logo > img {
+    height: 10vh;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(24, 22, 22);
+    width:100%;
+}
