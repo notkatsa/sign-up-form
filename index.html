@@ -21,24 +21,28 @@
                 <p>Sign up now to get started!</p>
                 <p class="quote">Don't we all like bread anyways?</p>
             </div>
-                <form action="#" method="get">
+                <form novalidate id="sign-form" action="#" method="get">
                 <div class="input"><label for="first_name">First Name</label>
-                    <input type="text" id="first_name">
+                    <input type="text" id="first_name" required >
                 </div>
-                <div class="input"><label for="last_name">Last name</label>
-                    <input type="text" id="last_name">
+                <div class="input"><label for="last_name">Last name</label> 
+                    <input type="text" id="last_name" required >
                 </div>
                 <div class="input"><label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required minlength="8">
+                    <span class="error"></span>
                 </div>
                 <div class="input"><label for="phone_number">Phone Number</label>
-                    <input type="number" id="phone">
+                    <input type="number" id="phone" required min="1000000000" max="9999999999">
+                    <span class="error"></span>
                 </div>
                 <div class="input"><label for="password">Password</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" required minlength="8" maxlength="20">
+                    <span class="error"></span>
                 </div>
                 <div class="input"><label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password">
+                    <input type="password" id="confirm_password" required >
+                    <span class="error"></span>
                 </div>
                 <div class="input signup-input"><input type="submit" value="Sign Up" class="sign-up-button"></div>
             </form>
@@ -47,5 +51,6 @@
             </div>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
